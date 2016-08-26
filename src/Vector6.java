@@ -53,7 +53,7 @@ public class Vector6 extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 2, 36)); // NOI18N
         jLabel1.setText("vector multifuncional");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 350, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 350, -1));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
@@ -69,46 +69,46 @@ public class Vector6 extends javax.swing.JFrame {
                 txtLongitudKeyTyped(evt);
             }
         });
-        jPanel3.add(txtLongitud, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 90, -1));
+        jPanel3.add(txtLongitud, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 110, -1));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 190, 70));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 220, 70));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Opciones"));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        cmdCrear.setText("CREAR");
+        cmdCrear.setText("Crear");
         cmdCrear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdCrearActionPerformed(evt);
             }
         });
-        jPanel4.add(cmdCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 110, -1));
+        jPanel4.add(cmdCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 90, -1));
 
-        cmdLlenarManu.setText("LLENAR MANUAL");
+        cmdLlenarManu.setText("Llenar Manual");
         cmdLlenarManu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdLlenarManuActionPerformed(evt);
             }
         });
-        jPanel4.add(cmdLlenarManu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+        jPanel4.add(cmdLlenarManu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
 
-        cmdLlenarAuto.setText("LLENAR AUTO");
+        cmdLlenarAuto.setText("Llenar Autom");
         cmdLlenarAuto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdLlenarAutoActionPerformed(evt);
             }
         });
-        jPanel4.add(cmdLlenarAuto, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 110, -1));
+        jPanel4.add(cmdLlenarAuto, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 110, -1));
 
-        cmdMostrar.setText("MOSTRAR");
+        cmdMostrar.setText("Mostrar");
         cmdMostrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdMostrarActionPerformed(evt);
             }
         });
-        jPanel4.add(cmdMostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 110, -1));
+        jPanel4.add(cmdMostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 110, -1));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 150, 170));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 160, 170));
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Resultado", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(51, 255, 0))); // NOI18N
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -121,17 +121,17 @@ public class Vector6 extends javax.swing.JFrame {
         txtResultado.setRows(5);
         jScrollPane1.setViewportView(txtResultado);
 
-        jPanel6.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 190, 120));
+        jPanel6.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 150, 110));
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 220, 160));
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 210, 160));
 
-        cmdBorrar.setText("BORRAR");
+        cmdBorrar.setText("Borrar");
         cmdBorrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdBorrarActionPerformed(evt);
             }
         });
-        jPanel1.add(cmdBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, 110, -1));
+        jPanel1.add(cmdBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 300, 90, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -154,18 +154,18 @@ public class Vector6 extends javax.swing.JFrame {
         int longitud;
         
             if(txtLongitud.getText().trim().isEmpty()){
-            JOptionPane.showMessageDialog(this, "Digite la longitud del vector", "Error", JOptionPane.ERROR_MESSAGE);
-            txtLongitud.requestFocusInWindow();
+                JOptionPane.showMessageDialog(this, "Digite la longitud del vector", "Error", JOptionPane.ERROR_MESSAGE);
+                txtLongitud.requestFocusInWindow();
             }            
             else if(Integer.parseInt(txtLongitud.getText().trim())==0){
-            JOptionPane.showMessageDialog(this, "La longitud no puede ser cero", "Error", JOptionPane.ERROR_MESSAGE);
-            txtLongitud.requestFocusInWindow();
-            txtLongitud.selectAll();
+                JOptionPane.showMessageDialog(this, "La longitud no puede ser cero", "Error", JOptionPane.ERROR_MESSAGE);
+                txtLongitud.requestFocusInWindow();
+                txtLongitud.selectAll();
             }
             else {
-            longitud= Integer.parseInt(txtLongitud.getText().trim());
-            v = new double [longitud];
-            JOptionPane.showMessageDialog(this, "Vector Creado Exitosamente");
+                longitud= Integer.parseInt(txtLongitud.getText().trim());
+                v = new double [longitud];
+                JOptionPane.showMessageDialog(this, "Vector Creado Exitosamente");
             }
     }//GEN-LAST:event_cmdCrearActionPerformed
 
@@ -178,26 +178,26 @@ public class Vector6 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtLongitudKeyTyped
 
     private void cmdLlenarManuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarManuActionPerformed
-        
-            double n;
+        double n;
+            
             for (int i = 0; i < v.length; i++) {
-            n= Double.parseDouble(JOptionPane.showInputDialog(this, "Digite el elemento en la posicion"+i));
-            v[i]=n;
+                n= Double.parseDouble(JOptionPane.showInputDialog(this, "Digite el elemento en la posicion"+i));
+                v[i]=n;
             }
     }//GEN-LAST:event_cmdLlenarManuActionPerformed
 
         public static  boolean vectorsime(double[] v){
             double[] vec=new double[v.length];
-            int t=v.length-1;
+                int t=v.length-1;
             for (int i = 0; i < v.length; i++) {
-            vec[t]=v[i];
-            t--;
-            }
+                vec[t]=v[i];
+                t--;
+                }
             for (int i = 0; i < v.length; i++) {
-            if (vec[i]!=v[i]) {
-            return false;
+                if (vec[i]!=v[i]) {
+                return false;
             }
-            }
+                }
             return true;
             }
     
